@@ -164,16 +164,16 @@ public:
 		case WM_KEYDOWN:
 			switch (msg.vkcode)
 			{
-			case VK_UP:
+			case 87:
 				is_move_up = true;
 				break;
-			case VK_DOWN:
+			case 83:
 				is_move_down = true;
 				break;
-			case VK_LEFT:
+			case 65:
 				is_move_left = true;
 				break;
-			case VK_RIGHT:
+			case 68:
 				is_move_right = true;
 				break;
 			}
@@ -181,16 +181,16 @@ public:
 		case WM_KEYUP:
 			switch (msg.vkcode)
 			{
-			case VK_UP:
+			case 87:
 				is_move_up = false;
 				break;
-			case VK_DOWN:
+			case 83:
 				is_move_down = false;
 				break;
-			case VK_LEFT:
+			case 65:
 				is_move_left = false;
 				break;
-			case VK_RIGHT:
+			case 68:
 				is_move_right = false;
 				break;
 			}
@@ -674,7 +674,7 @@ int main()
 				{
 					static TCHAR text[128];
 					_stprintf_s(text, _T("You are dead! Score: %d"), score);
-					MessageBox(GetHWnd(), _T("wasted"), _T("游戏结束"), MB_OK);
+					MessageBox(GetHWnd(), _T("Code:3"), _T("游戏结束"), MB_OK);
 					running = false;
 					break;
 				}
