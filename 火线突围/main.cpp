@@ -2,7 +2,7 @@
 #include<string>
 #include<vector>		// 引入vector头文件,替代C语言的数组
 #define PI 3.14159		// 定义圆周率常量
-
+//机魂不悦时拜一拜就好了
 
 int WINDOW_WIDTH = 1280;
 int WINDOW_HEIGHT = 720;
